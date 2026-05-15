@@ -19,6 +19,7 @@ A responsive navigation bar built using HTML, CSS, and JavaScript that changes a
 - When user scrolls down, a CSS class is added
 - Navbar style changes dynamically using CSS
 
+live link: interactivenavbarapge.netlify.app
 ## Project Structure
 - index.html → structure
 - style.css → styling
