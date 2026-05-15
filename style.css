@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#081120;
+    color:white;
+}
+
+/* NAVBAR */
+.navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    transition:all 0.3s ease;
+    z-index:1000;
+}
+
+/* SCROLL EFFECT */
+.scrolled{
+    background:#000;
+    box-shadow:0 2px 15px rgba(0,0,0,0.6);
+}
+
+/* LOGO */
+.logo{
+    color:#00bfff;
+    font-size:28px;
+}
+
+/* NAV LINKS */
+.nav-links{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    position:relative;
+}
+
+/* HOVER EFFECT */
+.nav-links a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:0%;
+    height:2px;
+    background:#00bfff;
+    transition:0.3s;
+}
+
+.nav-links a:hover::after{
+    width:100%;
+}
+
+/* BUTTON */
+.nav-btn{
+    padding:10px 20px;
+    border:none;
+    background:#00bfff;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* HERO SECTION */
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+/* EXTRA CONTENT FOR SCROLL */
+.content{
+    height:1500px;
+    text-align:center;
+    padding-top:100px;
+}
